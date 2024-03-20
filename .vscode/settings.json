@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "regex": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp"
+    }
+}
