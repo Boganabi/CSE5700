@@ -50,8 +50,6 @@ vector<Token> tokenize(const string& code) {
                 token += ch;
                 if(ch == 'E'){
                     iss >> std::noskipws >> ch;
-                    cout << token << endl;
-                    cout << ch << endl;
                     if(ch == '-' || isdigit(ch)){
                         token += ch;
                     }
