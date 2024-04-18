@@ -28,10 +28,10 @@ extern int line_number; // declared in lexer file
 prog    : prog dcl ';'  |  prog func | /* empty */
         ;
 
-dcl     : type var_decl { /* handle declaration */ printf("type variable declaration");}
-        | EXTERN type id '(' parm_types ')' { /* handle function declaration */ printf("extern type function declaration"); }
-        | type id '(' parm_types ')' { /* handle function declaration */ printf("type function declaration"); }
-        | EXTERN VOID id '(' parm_types ')' { /* handle void function declaration */ printf("void function declaration"); }
+dcl     : type var_decl { /* handle declaration */ }
+        | EXTERN type id '(' parm_types ')' { /* handle function declaration */ }
+        | type id '(' parm_types ')' { /* handle function declaration */  }
+        | EXTERN VOID id '(' parm_types ')' { /* handle void function declaration */ }
         ;
 
 var_decl: id '[' INTCON ']'
